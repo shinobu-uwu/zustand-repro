@@ -1,8 +1,15 @@
-import { Button, Typography } from "@mui/material";
-import { useState } from "react";
+import { useCounterStore } from '~stores/counter';
 
 function IndexPopup() {
-	return <Button variant="contained">Hello</Button>;
+    const { count, increment } = useCounterStore();
+    return (
+        <div>
+            Hello, {count}!
+            <p>
+                <button onClick={increment}>Increment</button>
+            </p>
+        </div>
+    );
 }
 
 export default IndexPopup;

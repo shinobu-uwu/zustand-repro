@@ -1,41 +1,40 @@
 {
-  "name": "refuse-stupid-elk",
-  "displayName": "Refuse stupid elk",
-  "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
-  "author": "Plasmo Corp. <foss@plasmo.com>",
-  "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build",
-    "package": "plasmo package"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^6.0.0",
-    "plasmo": "0.88.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
-    "@types/chrome": "0.0.258",
-    "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "prettier": "3.2.4",
-    "typescript": "5.3.3"
-  },
-  "manifest": {
-    "host_permissions": [
-      "https://*/*"
-    ],
-    "permissions": [
-      "tabs"
-    ]
-  }
+    "name": "refuse-stupid-elk",
+    "displayName": "Refuse stupid elk",
+    "version": "0.0.1",
+    "description": "A basic Plasmo extension.",
+    "author": "Plasmo Corp. <foss@plasmo.com>",
+    "scripts": {
+        "dev": "plasmo dev",
+        "build": "plasmo build",
+        "package": "plasmo package"
+    },
+    "peerDependencies": {
+        "react": "^17.0.0 || ^18.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.13.3",
+        "@emotion/styled": "^11.13.0",
+        "@mui/material": "^6.0.0",
+        "@plasmohq/storage": "^1.11.0",
+        "plasmo": "0.88.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "zustand": "^4.5.5"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.8.3",
+        "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+        "@types/chrome": "0.0.258",
+        "@types/node": "20.11.5",
+        "@types/react": "18.2.48",
+        "@types/react-dom": "18.2.18",
+        "prettier": "3.2.4",
+        "typescript": "5.3.3"
+    },
+    "manifest": {
+        "host_permissions": ["https://*/*"],
+        "permissions": ["tabs"]
+    }
 }
